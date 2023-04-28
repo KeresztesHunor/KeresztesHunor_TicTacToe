@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "ar as";
+  width: 100%;
+  max-width: 516px;
+  margin: auto;
+}
+
+main > article {
+  display: grid;
+  grid-template-columns: repeat(3, 128px);
+  gap: 4px;
+  grid-area: ar;
+}
+
+main > article > div {
+  width: 128px;
+  height: 128px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+main > article > div:hover {
+  background-color: lightgray;
+}
+
+main > article > div:active {
+  background-color: gray;
+}
+
+main > article > div > p {
+  text-align: center;
+  font-size: 109px;
+  margin: 0;
+}
+
+main > aside {
+  grid-area: as;
+}
